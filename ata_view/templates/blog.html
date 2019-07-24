@@ -1,0 +1,35 @@
+{% extends 'base/base_ata.html' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+{% for blog in list_blog %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <br>
+            <img src="{{blog.gambar}}" width="500" alt="">
+            <div class="row">
+                <div class="col-6">
+                    {{blog.date}}
+                </div>
+                <div class="col-6">
+                    {{b.comment_count}} comments
+                </div>
+            </div>
+            <h4>
+                {{blog.judul}}
+            </h4>
+            <p>
+                {{blog.isi|safe|truncatewords:"50"|linebreaks}}
+            </p>
+            <a href="">
+                Baca Selengkapnya....
+            </a>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}

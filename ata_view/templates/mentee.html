@@ -1,0 +1,34 @@
+{%extends 'base/base_ata.html'%}
+{%block title%}Mentees{%endblock%}
+
+{%block content%}
+<h2 class="aligncenter font-weight-bold">Mentees</h2>
+<br>
+<div class=container>
+        {% for mentee in list_mentee %}
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="mentee-picture">
+                        <img src="{{mentee.gambar}}">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="mentee-name">
+                           <h5 class="font-weight-bold"> {{mentee.nama}}</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="mentee-quote">
+                            {{mentee.quote}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        {%endfor%}
+</div>
+
+{%endblock%}<

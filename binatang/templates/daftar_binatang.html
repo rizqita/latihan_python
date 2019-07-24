@@ -1,0 +1,10 @@
+{% extends 'base/base.html'%}
+{% block content %}
+<ol>
+{% for hewan in list_hewan %}
+    <li>
+        {{hewan}}
+    </li>
+    {% endfor %}
+</ol>
+{% endblock %}

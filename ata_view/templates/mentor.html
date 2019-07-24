@@ -1,0 +1,41 @@
+{%extends 'base/base_ata.html'%}
+{%block title%}Mentors{%endblock%}
+
+{%block content%}
+<h2 class="aligncenter font-weight-bold">Our Mentors</h2>
+<br>
+<div class=container>
+        {% for mentor in list_mentor %}
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mentor-picture">
+                        <img src="{{mentor.gambar}}">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="mentor-name">
+                           <h5 class="font-weight-bold text-secondary"> {{mentor.nama}}
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="mentor-jabatan">
+                            <h6 class="font-weight-bold">{{mentor.jabatan}} ({{mentor.durasi}} years experience.)</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="mentor-quote">
+                            {{mentor.quote}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        {%endfor%}
+</div>
+
+{%endblock%}

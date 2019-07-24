@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700,900|Roboto:400,500&display=swap');
+
+.isi{
+    background-image: url(../img/bg-img-1.png);
+    background-size:100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-logo {
+    background-color: #40D0E0;
+    text-align: center;
+}
+.header-name{
+  margin-top: 15px;
+  font-size: x-large;
+}
+.header-text-big{
+  text-align: center;
+  text-align: center;
+  background-color: #40D0E0;
+  font-size: xx-large;
+}
+.header-paragraph{
+  text-align: center !important;
+  background-color: #40D0E0
+}
+
+.menu{
+    display: table;
+    float: right;
+}
+.menu li{
+
+    display: table-cell;
+    padding-right: 30px;
+    vertical-align: middle;
+    padding-top: 20px;
+    color: #19345E;
+    text-transform: uppercase;
+    font-family: 'Muli', sans-serif;
+}
+a :hover{
+    color: orange;
+}
+.mentee-picture img
+{
+width: 75%;
+height: 75%;
+}
+.text-first-page{
+    margin: 0;
+   padding-top: 49px;
+}
+
+
+.author-name p{
+  text-align: left;
+  float: left;
+}
+
+.hi{
+    font-size: 25px;
+    color: #19345E;
+    margin: 0;
+}
+.name{
+    font-size: 85px;
+    font-weight: 900;
+    color: #19345E;
+    display: inline;
+    width: 519px;
+    height: 100px;
+
+}
+.aligncenter{
+  text-align: center;
+}
+.logo-table{
+  padding: 30px;
+}
+.logo-table td{
+  padding: 30px;
+}
+.footer{
+    background-color: #40D0E0;
+}
+.footer-logo{
+  display: table;
+  float:left;
+}
+.row2{
+  background-color: #000000
+}
+.row2 p{
+  color: white;
+  align-items: center;
+}
+.alignright p{
+  padding-left: 10px;
+}
+
+/* 
+untuk di blog
+*/
+.blog-picture img{
+  width: 75%;
+  height: 75%;
+  padding-left: 20px;
+}
+.blog-title{
+  font-size: 25px;
+}
+.blog-isi{
+  font-size: 15px;
+}
+.blog-picture img{
+  width: 500px;
+}
+.profile-picture img{
+  width:600px;
+}
+@media (max-width:992px) {
+    .profile-picture{width: 100%; align-items: center;}
+    .menu{padding: 0px;}
+    .name{width: 100%;height: 100% ; font-size: 41px;}
+    .description{font-size: 20px;}
+    .header-logo{text-align: center;}
+    .menu li{font-size: 14px; padding: 4px;}
+    .menu ul{padding: 0px; margin-right: 24px; margin-top: 20px;}
+    }
